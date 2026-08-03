@@ -1,39 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
-<meta name="theme-color" content="#090d13">
-<link rel="manifest" href="manifest.json">
-<link rel="icon" href="icon.svg" type="image/svg+xml">
-<title>OPEN CITY — browser open world</title>
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='18' fill='%23111722'/><text x='50' y='72' font-size='62' text-anchor='middle' fill='%23ffd24a' font-family='Arial' font-weight='bold' font-style='italic'>OC</text></svg>">
-<style>
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  html, body { width: 100%; height: 100%; overflow: hidden; background: #000; font-family: 'Segoe UI', Arial, sans-serif; touch-action: none; overscroll-behavior: none; }
-  canvas#game { display: block; }
+An Autotag zone rwzafcpzc8 was created for you.
 
-  #hud { position: fixed; inset: 0; pointer-events: none; user-select: none; }
+Step 1: Include Adcash library
+Place the following JS script inside <head></head> of your page as high as possible.
 
-  #topright {
-    position: absolute; top: 18px; right: 22px; text-align: right;
-  }
-  #money {
-    font-size: 30px; font-weight: 800; font-style: italic; color: #7cc77c;
-    text-shadow: 2px 2px 0 #000, 0 0 8px rgba(0,0,0,.8); letter-spacing: 1px;
-  }
-  #clock {
-    font-size: 20px; font-weight: 700; color: #e8eef5;
-    text-shadow: 2px 2px 0 #000; letter-spacing: 2px; margin-top: 2px;
-  }
-  #stars { margin-top: 4px; font-size: 26px; letter-spacing: 3px; }
-  #stars span { color: rgba(255,255,255,.18); text-shadow: 1px 1px 0 #000; transition: color .2s; }
-  #stars span.lit { color: #ffd24a; text-shadow: 0 0 10px rgba(255,180,0,.9), 1px 1px 0 #000; }
+NOTE: If you already have Adcash lib included, it is unnecessary to include it again. In this case, skip step 1.
 
-  #bottomleft { position: absolute; left: 20px; bottom: 20px; }
-  #minimap {
-    display: block; border: 3px solid rgba(255,255,255,.75); border-radius: 8px;
-    background: #0c1117; box-shadow: 0 4px 18px rgba(0,0,0,.6);
+<script id="aclib" type="text/javascript" src="//acscdn.com/script/aclib.js"></script>
+
+Step 2: Put the tag script on the page
+Copy the following JS code and paste it into the source code of your page below first library script.
+
+<script type="text/javascript">
+    aclib.runAutoTag({
+        zoneId: 'rwzafcpzc8',
+    });
+</script>
   }
   #healthwrap {
     width: 176px; height: 12px; margin-bottom: 8px; border: 2px solid rgba(255,255,255,.75);
